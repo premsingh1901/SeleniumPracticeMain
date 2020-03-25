@@ -27,6 +27,7 @@ import org.testng.annotations.Test;
  * 
  * For install testNG- navigate to help in eclipse - add new software.
  * Provide the testNG url and select testNG
+ * Checkins in the github
  */
 
 public class TestNG_Practice {
