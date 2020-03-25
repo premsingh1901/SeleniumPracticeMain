@@ -1,4 +1,6 @@
-package AllConcepts;
+package testngConcept;
+
+import java.util.NoSuchElementException;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
@@ -20,6 +22,8 @@ import org.testng.annotations.Test;
  * 8. Dependencies 
  * 9. grouping 
  * 10. Data Providers are available- VVI
+ * 11. invocationcount--- HOw many time we can execute test case.
+ * 12. We can skip the exceptions----> @Test(expectedExceptions = NoSuchElementException.class)
  * 
  * For install testNG- navigate to help in eclipse - add new software.
  * Provide the testNG url and select testNG
@@ -52,7 +56,7 @@ public class TestNG_Practice {
 	}
 	
 	
-	@Test
+	@Test(expectedExceptions = NoSuchElementException.class)
 	void a()
 	{
 		System.out.println("Test1: After all before method executions");

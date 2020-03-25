@@ -1,4 +1,4 @@
-package AllConcepts;
+package testngConcept;
 
 import java.util.concurrent.TimeUnit;
 
@@ -22,7 +22,7 @@ public class VisibilityTest {
 		driver.get("https://login.yahoo.com/config/login?.src=fpctx&.intl=in&.lang=en-IN&.done=https://in.yahoo.com");
 	}
 	
-	@Test
+	@Test(priority = 1, groups = "LoginPage")
 	void isDisplayedTest()
 	{
 		Boolean isDisplay=driver.findElement(By.id("login-signin")).isDisplayed();
@@ -30,7 +30,7 @@ public class VisibilityTest {
 		
 	}
 	
-	@Test
+	@Test(priority=3, groups="LoginPage", dependsOnMethods = "isDisplayedTest")
 	void isEnabledTest()
 	{
 		Boolean isEnabled=driver.findElement(By.id("login-signin")).isEnabled();
@@ -39,7 +39,7 @@ public class VisibilityTest {
 		
 	}
 	
-	@Test
+	@Test(priority=2, groups = "HomePage")
 	void isSelected()
 	{
 		Boolean isSelected=driver.findElement(By.id("persistent")).isSelected();
@@ -47,13 +47,19 @@ public class VisibilityTest {
 		
 	}
 	
-	@Test
+	@Test(priority=1, groups ="HomePage")
 	void isSelectedCheck()
 	{
 		driver.findElement(By.xpath("//label[contains(text(),'Stay signed in')]")).click();
 		Boolean isSelected1=driver.findElement(By.xpath("//label[contains(text(),'Stay signed in')]")).isSelected();
 		System.out.println("Is Selected method should be False: "+isSelected1);
 		
+	}
+	
+	@Test(invocationCount = 5)
+	void test()
+	{
+		System.out.println("invocationCount concepts");
 	}
 
 	
