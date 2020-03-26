@@ -12,7 +12,7 @@ import org.testng.annotations.Test;
 public class VisibilityTest {
 	
 	WebDriver driver;
-	@BeforeMethod
+	@BeforeMethod(groups = { "LoginTest" })
 	void setUp()
 	{
 		System.setProperty("webdriver.chrome.driver","G:\\WorkSpcae\\JavaPractice\\SeleniumPractice\\Drivers\\chromedriver.exe");
@@ -22,7 +22,7 @@ public class VisibilityTest {
 		driver.get("https://login.yahoo.com/config/login?.src=fpctx&.intl=in&.lang=en-IN&.done=https://in.yahoo.com");
 	}
 	
-	@Test(priority = 1, groups = "LoginPage")
+	@Test(priority = 1, groups = { "LoginTest" })
 	void isDisplayedTest()
 	{
 		Boolean isDisplay=driver.findElement(By.id("login-signin")).isDisplayed();

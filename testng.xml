@@ -1,0 +1,55 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1">
+ 
+ 
+ <listeners>
+        <listener class-name="ExtentReports.ExtentReporterNG"/>
+  </listeners>
+  
+  <test name="Test1"> <!--  any name will be fine with test -->
+  <groups>
+    <run>
+      <include name="functest-Delte"/>
+      <include name="checkintest"/>
+      
+    </run>
+  </groups>
+  <classes>
+    <class name="testngConcept.Test1"/>
+  </classes>
+
+
+
+ 
+</test>
+  
+  
+  
+   <test name="Test" >
+   
+   <groups>
+    <run>
+      <include name="LoginTest"/> <!-- not only test method we have to give the group name to beforemthod also, so that pre-requiates can be added -->
+      
+      
+    </run>
+  </groups>
+   
+    <classes>
+       <class name="testngConcept.VisibilityTest"/>
+       <class name="testngConcept.TestNG_Practice"/>
+       
+    </classes>
+    
+  
+    
+    
+    
+  </test>
+   
+    
+
+ 
+ 
+</suite>

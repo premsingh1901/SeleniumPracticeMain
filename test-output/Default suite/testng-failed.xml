@@ -3,11 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AllConcepts.ExpectedExceptionsTest">
+      <class name="AllConcepts.DropdownConcept">
         <methods>
-          <include name="noExpception"/>
+          <include name="tearDown"/>
+          <include name="dropDownTest"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- AllConcepts.ExpectedExceptionsTest -->
+      </class> <!-- AllConcepts.DropdownConcept -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

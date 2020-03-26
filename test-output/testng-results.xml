@@ -1,129 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+<testng-results ignored="6" total="9" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-23T22:41:22 IST" name="Default suite" finished-at="2020-03-23T22:42:32 IST" duration-ms="70131">
+  <suite started-at="2020-03-27T00:32:35 IST" name="Suite1" finished-at="2020-03-27T00:33:09 IST" duration-ms="34297">
     <groups>
-      <group name="HomePage">
-        <method signature="VisibilityTest.isSelected()[pri:2, instance:testngConcept.VisibilityTest@245b4bdc]" name="isSelected" class="testngConcept.VisibilityTest"/>
-        <method signature="VisibilityTest.isSelectedCheck()[pri:1, instance:testngConcept.VisibilityTest@245b4bdc]" name="isSelectedCheck" class="testngConcept.VisibilityTest"/>
-      </group> <!-- HomePage -->
-      <group name="LoginPage">
-        <method signature="VisibilityTest.isDisplayedTest()[pri:1, instance:testngConcept.VisibilityTest@245b4bdc]" name="isDisplayedTest" class="testngConcept.VisibilityTest"/>
-        <method signature="VisibilityTest.isEnabledTest()[pri:3, instance:testngConcept.VisibilityTest@245b4bdc]" name="isEnabledTest" class="testngConcept.VisibilityTest"/>
-      </group> <!-- LoginPage -->
+      <group name="checkintest">
+        <method signature="Test1.testMethod1()[pri:0, instance:testngConcept.Test1@5158b42f]" name="testMethod1" class="testngConcept.Test1"/>
+        <method signature="Test1.testMethod2()[pri:0, instance:testngConcept.Test1@5158b42f]" name="testMethod2" class="testngConcept.Test1"/>
+      </group> <!-- checkintest -->
+      <group name="functest">
+        <method signature="Test1.testMethod1()[pri:0, instance:testngConcept.Test1@5158b42f]" name="testMethod1" class="testngConcept.Test1"/>
+        <method signature="Test1.testMethod2()[pri:0, instance:testngConcept.Test1@5158b42f]" name="testMethod2" class="testngConcept.Test1"/>
+      </group> <!-- functest -->
+      <group name="LoginTest">
+        <method signature="VisibilityTest.isDisplayedTest()[pri:1, instance:testngConcept.VisibilityTest@7c7b252e]" name="isDisplayedTest" class="testngConcept.VisibilityTest"/>
+      </group> <!-- LoginTest -->
     </groups>
-    <test started-at="2020-03-23T22:41:22 IST" name="Default test" finished-at="2020-03-23T22:42:32 IST" duration-ms="70131">
+    <test started-at="2020-03-27T00:32:35 IST" name="Test1" finished-at="2020-03-27T00:32:35 IST" duration-ms="81">
+      <class name="testngConcept.Test1">
+        <test-method signature="testMethod1()[pri:0, instance:testngConcept.Test1@5158b42f]" started-at="2020-03-27T00:32:35 IST" name="testMethod1" finished-at="2020-03-27T00:32:35 IST" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod1 -->
+        <test-method signature="testMethod2()[pri:0, instance:testngConcept.Test1@5158b42f]" started-at="2020-03-27T00:32:35 IST" name="testMethod2" finished-at="2020-03-27T00:32:35 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethod2 -->
+      </class> <!-- testngConcept.Test1 -->
+    </test> <!-- Test1 -->
+    <test started-at="2020-03-27T00:32:35 IST" name="Test" finished-at="2020-03-27T00:33:09 IST" duration-ms="33908">
       <class name="testngConcept.VisibilityTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:22 IST" name="setUp" finished-at="2020-03-23T22:41:41 IST" duration-ms="19320" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@7c7b252e]" started-at="2020-03-27T00:32:35 IST" name="setUp" finished-at="2020-03-27T00:33:09 IST" duration-ms="33356" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:41 IST" name="test" finished-at="2020-03-23T22:41:41 IST" duration-ms="8" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:41 IST" name="tearDown" finished-at="2020-03-23T22:41:42 IST" duration-ms="799" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:42 IST" name="setUp" finished-at="2020-03-23T22:41:47 IST" duration-ms="5136" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:47 IST" name="test" finished-at="2020-03-23T22:41:47 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:47 IST" name="tearDown" finished-at="2020-03-23T22:41:47 IST" duration-ms="299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:47 IST" name="setUp" finished-at="2020-03-23T22:41:55 IST" duration-ms="7741" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:55 IST" name="test" finished-at="2020-03-23T22:41:55 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:55 IST" name="tearDown" finished-at="2020-03-23T22:41:56 IST" duration-ms="444" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:41:56 IST" name="setUp" finished-at="2020-03-23T22:42:01 IST" duration-ms="5433" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:01 IST" name="test" finished-at="2020-03-23T22:42:01 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:01 IST" name="tearDown" finished-at="2020-03-23T22:42:02 IST" duration-ms="537" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:02 IST" name="setUp" finished-at="2020-03-23T22:42:07 IST" duration-ms="5346" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="test()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:07 IST" name="test" finished-at="2020-03-23T22:42:07 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:07 IST" name="tearDown" finished-at="2020-03-23T22:42:07 IST" duration-ms="186" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:07 IST" name="setUp" finished-at="2020-03-23T22:42:12 IST" duration-ms="5276" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isDisplayedTest()[pri:1, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:12 IST" name="isDisplayedTest" finished-at="2020-03-23T22:42:13 IST" duration-ms="202" status="PASS">
+        <test-method signature="isDisplayedTest()[pri:1, instance:testngConcept.VisibilityTest@7c7b252e]" started-at="2020-03-27T00:33:09 IST" name="isDisplayedTest" finished-at="2020-03-27T00:33:09 IST" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isDisplayedTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:13 IST" name="tearDown" finished-at="2020-03-23T22:42:15 IST" duration-ms="2295" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:15 IST" name="setUp" finished-at="2020-03-23T22:42:20 IST" duration-ms="4650" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isSelectedCheck()[pri:1, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:20 IST" name="isSelectedCheck" finished-at="2020-03-23T22:42:20 IST" duration-ms="718" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSelectedCheck -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:20 IST" name="tearDown" finished-at="2020-03-23T22:42:20 IST" duration-ms="82" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:20 IST" name="setUp" finished-at="2020-03-23T22:42:26 IST" duration-ms="5848" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isSelected()[pri:2, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:26 IST" name="isSelected" finished-at="2020-03-23T22:42:27 IST" duration-ms="402" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isSelected -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:27 IST" name="tearDown" finished-at="2020-03-23T22:42:27 IST" duration-ms="316" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:27 IST" name="setUp" finished-at="2020-03-23T22:42:32 IST" duration-ms="4700" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="isEnabledTest()[pri:3, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:32 IST" name="isEnabledTest" finished-at="2020-03-23T22:42:32 IST" depends-on-methods="testngConcept.VisibilityTest.isDisplayedTest" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- isEnabledTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngConcept.VisibilityTest@245b4bdc]" started-at="2020-03-23T22:42:32 IST" name="tearDown" finished-at="2020-03-23T22:42:32 IST" duration-ms="197" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
       </class> <!-- testngConcept.VisibilityTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite1 -->
 </testng-results>
