@@ -1,0 +1,2 @@
+@CacheLookup- this lookup used to fasten the framework, it will store all the elements in the cache. However, not recommoned all the time when the pages refreshed. 
+WebDriverFireEvent- used to track the driver interaction with web elements. Or its used to generates the logs.
